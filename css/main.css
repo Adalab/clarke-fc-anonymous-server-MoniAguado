@@ -43,41 +43,43 @@ body {
 /* MENU */
 .nav {
   position: fixed;
+  display: flex;
+  text-align: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
 	right: 0;
 	top: 0;
 	background-color: rgba(64, 41, 41, 0.92);
-	transition: transform ease .7s, background ease .7s .5s;
-	transform: translateX(150%);
-	.menu-visible & {
-		transform: translateX(0);
-		width: 100%;
-		background-color: rgba(64, 41, 41, 0.5);
-	}
+	transition: all .5s;
+	left: 100%;
+	z-index: 1;
+}
+
+.menu-visible  {
+  left: 0;
 }
 .nav__items {
-	background-color: rgba(64, 41, 41, 0.92);
   list-style: none;
   font-family: 'Roboto Slab';
-  text-align: center;
   color: white;
   font-size: 40px;
   font-weight: bold;
-  margin: 20px;
+  width: 100%;
 }
 
 .nav__item {
   text-align: center;
 
+
 }
 .nav__link {
   text-decoration: none;
-  color: rgba(64, 41, 41, 0.92);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .nav__link:hover {
-  color: rgb(211, 227, 238);
+  color: rgb(164, 194, 214);
 }
 .nav-close {
   background-image: url('../images/ico-close.svg');
@@ -93,6 +95,7 @@ body {
   height: 40px;
   width: 40px;
   cursor: pointer;
+  font-size: 0;
 }
 
 

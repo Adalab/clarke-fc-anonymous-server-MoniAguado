@@ -18,10 +18,10 @@ buttonOpen.addEventListener('click', openMenu);
 buttonClose.addEventListener('click', closeMenu);
 
 
-// var links = document.querySelectorAll('.nav-link');
-// for (var i = 0; i < links.length; i++) {
-// 	links[i].addEventListener('click', closeMenu);
-// }
-//
-// var click = document.querySelector('.nav');
-// click.addEventListener('click', closeMenu);
+var links = document.querySelectorAll('.nav-link');
+for (var i = 0; i < links.length; i++) {
+	links[i].addEventListener('click', closeMenu);
+}
+
+var click = document.querySelector('.nav');
+click.addEventListener('click', closeMenu);
